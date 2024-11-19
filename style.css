@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(240, 240, 240);
+    color: white;
+    min-height: 100vh;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+
+}
+
+.calInput{
+    width: 100%;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    padding: 1rem;
+    outline: none;
+    background: rgb(200, 200, 200); 
+    color: black;                  
+    text-align: right;         
+
+}
+
+.main-header{
+    width: 100%;
+    margin: 0.5rem 0;
+}
+
+.container{
+    min-width: 10rem;
+    max-width: 20rem;
+    margin: 0 auto;
+    background: rgb(82, 82, 82);
+    padding-bottom: 2rem;
+    border-radius: 2rem;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button{
+    padding: 0.6rem;
+    font-size: 2rem;
+    min-width: 4rem;
+    height: auto;
+    cursor: pointer;
+    border-radius: 1rem;
+    color: white;
+    background: hsl(56, 10%, 28%);
+    border: 5px solid gray;
+    margin: 0.5rem 0;
+}
+
+.button:hover{
+    background: hsl(53, 9%, 40%);
+    border: 5px solid rgb(221, 217, 217);
+}
+
+.button:focus {
+    outline: 2px dashed rgb(250, 240, 248);
+    transform: rotate(360deg);
+}
+
+
+.cancBtn{
+    background: hsl(172, 53%, 86%);
+    color: rgb(56, 55, 55);
+}
+
+.zeroBtn{
+    background: hsl(52, 53%, 86%);
+    color: rgb(56, 55, 55);
+}
+
+.minBtn{
+    background: hsl(0, 0%, 32%);
+    color: rgb(255, 255, 255);
+    border: 5px solid rgb(224, 219, 219);
+}
+
+.eightBtn{
+    background: hsl(0, 0%, 32%);
+    color: rgb(255, 255, 255);
+    border: 5px solid rgb(224, 219, 219);
+}
+
+.equalBtn{
+    background: hsl(0, 0%, 32%);
+    color: rgb(255, 255, 255);
+    border: 5px solid rgb(224, 219, 219);
+}
+
+.fiveBtn{
+    background: hsl(0, 0%, 32%);
+    color: rgb(255, 255, 255);
+    border: 5px solid rgb(224, 219, 219);
+}
