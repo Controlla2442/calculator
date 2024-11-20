@@ -16,7 +16,6 @@ body{
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
-
 }
 
 .calInput{
@@ -28,12 +27,16 @@ body{
     background: rgb(200, 200, 200); 
     color: black;                  
     text-align: right;         
-
+    text-wrap: wrap;
 }
 
 .main-header{
     width: 100%;
     margin: 0.5rem 0;
+}
+
+.main-header h2{
+  margin: 1rem;
 }
 
 .container{
@@ -73,6 +76,12 @@ body{
 .cancBtn{
     background: hsl(172, 53%, 86%);
     color: rgb(56, 55, 55);
+}
+
+.delBtn{
+  background: hsla(104, 83%, 82%, 1);
+  color: hsla(0, 0%, 16%, 1);
+  font-size: 1.8rem;
 }
 
 .zeroBtn{
