@@ -1,21 +1,21 @@
 const calInput = document.getElementById("calInput");
-const buttons = document.querySelectorAll(".button"); // Select all buttons with class "button"
+const buttons = document.querySelectorAll(".button");
 
-// Add event listeners to all buttons
 buttons.forEach((button) => {
-    button.addEventListener("click", () => {
-        const value = button.textContent; // Get the button text
-
-        if (value.trim().toUpperCase() === "C") {
-            calInput.value = ""; // Clear the input field
-        } else if (value === "=") {
-            try {
-                calInput.value = eval(calInput.value); // Safely evaluate the expression
-            } catch {
-                calInput.value = "Error"; // Handle invalid expressions
-            }
-        } else {
-            calInput.value += value; // Append the button value to the input
-        }
-    });
+  button.addEventListener("click", () => {
+    const value = button.textContent; 
+    if (value.trim().toUpperCase() === "C") {
+      calInput.value = ""; 
+    }else if (value === "⌫") {
+      calInput.value = calInput.value.slice(0, -1);
+    } else if (value === "=") {
+      try {
+        calInput.value = eval(calInput.value); 
+      } catch {
+        calInput.value = "Error"; 
+      }
+    } else {
+      calInput.value += value; 
+    }
+  });
 });
